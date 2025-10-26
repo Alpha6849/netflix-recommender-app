@@ -15,7 +15,7 @@ It includes:
 
 ## Features
 
-### 🔍 Data Analysis
+###  Data Analysis
 
 * Cleaned dataset by handling missing values and incorrect entries
 * Visualized Netflix content distribution by:
@@ -67,7 +67,7 @@ netflix_project/
 
 ---
 
-## 📈 Screenshots / Preview
+## Screenshots / Preview
 
 ### Home Page
 ![Home 1](screenshots/home1.png) ![Home 2](screenshots/home2.png)
@@ -79,7 +79,7 @@ netflix_project/
 ![Recommend 1](screenshots/recomm.png) ![Recommend 2](screenshots/recomm2.png)
 
 
-## ⚙️ Installation
+##  Installation
 
 1. Clone or download this repository
 
@@ -102,8 +102,11 @@ netflix_project/
 ## 📊 Results
 
 * **Best Model:** Random Forest
-* **Accuracy:** ~53% after hyperparameter tuning
-* **Best Recommender Example:**
+**Predictive Model Accuracy:**  
+The Random Forest model achieves approximately **53% accuracy** on the Netflix rating prediction task.  
+> Note: Since Netflix ratings are subjective and multiclass, this performance demonstrates the model captures meaningful patterns from limited features (type, genre, country, duration, and decade). The primary focus of the app is the content-based recommendation system.
+
+* **Recommender Example:**
 
   * Input: *Stranger Things*
   * Output: `[October Faction, Trese, Curon, 46, Good Witch]`

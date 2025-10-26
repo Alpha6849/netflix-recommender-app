@@ -6,9 +6,7 @@ from sklearn.preprocessing import LabelEncoder
 import requests
 import urllib.parse
 
-# -----------------------------
-# 1️⃣ Load Data and Models
-# -----------------------------
+
 @st.cache_data
 def load_data():
     df = pd.read_csv("data/netflix_titles.csv")
@@ -50,18 +48,16 @@ df['type_encoded'] = le_type.fit_transform(df['type'].astype(str))
 le_genre = LabelEncoder()
 df['genre_encoded'] = le_genre.fit_transform(df['main_genre'])
 
-# -----------------------------
-# 2️⃣ Streamlit Layout
-# -----------------------------
+# Streamlit Layout
+
 st.set_page_config(page_title="Netflix Analysis & Recommender", layout="wide")
 st.title("🎬 Netflix Analysis & Recommender")
+
+# for home page:-
 
 menu = ["Home", "Predict Rating", "Recommend Shows"]
 choice = st.sidebar.selectbox("Menu", menu)
 
-# -----------------------------
-# 3️⃣ Home Page
-# -----------------------------
 if choice == "Home":
     st.header("📊 Dataset Overview")
     st.dataframe(df.head(10))
@@ -70,9 +66,9 @@ if choice == "Home":
     st.write("**TV Shows:**", df[df['type'] == "TV Show"].shape[0])
     st.bar_chart(df['rating_encoded'].value_counts())
 
-# -----------------------------
-# 4️⃣ Predict Rating
-# -----------------------------
+
+# Predict Rating
+
 elif choice == "Predict Rating":
     st.header("🤖 Predict Netflix Rating")
 
@@ -105,16 +101,14 @@ elif choice == "Predict Rating":
     except Exception as e:
         st.error(f"⚠️ Prediction failed: {e}")
 
-# -----------------------------
-# 5️⃣ Recommend Shows (with Posters)
-# -----------------------------
+# for recommedating shows  :-
+
 elif choice == "Recommend Shows":
     st.header("🎯 Recommend Similar Shows")
 
     show_title = st.selectbox("Choose a show:", df['title'].dropna().tolist())
     top_n = st.slider("Number of Recommendations", 1, 10, 5)
 
-    # 🔑 Unhidden OMDb key (for local testing)
     YOUR_OMDB_KEY = "c247010b"  
 
     # Poster fetching with caching
