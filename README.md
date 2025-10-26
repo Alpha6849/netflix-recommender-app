@@ -113,10 +113,17 @@ The Random Forest model achieves approximately **53% accuracy** on the Netflix r
 
 ---
 
+## 📂 Full Project Code
 
-## 🧑‍💻 Author
+For those interested in the **model training, feature engineering, and hyperparameter tuning**, the complete notebook is available:
 
-**Prathamesh**
+[netflix_project_code.ipynb](netflix_project_code.ipynb)
+
+
+
+## Author
+
+**Prathamesh** - 
 Machine Learning & Deep Learning Enthusiast
 
 ---
