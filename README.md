@@ -119,6 +119,8 @@ For those interested in the **model training, feature engineering, and hyperpara
 
 [netflix_project_code.ipynb](netflix_project_code.ipynb)
 
+## 🌐 Live Demo
+Try the app live: [Netflix Analysis & Recommender](https://alpha6849-netflix-recommender-app.streamlit.app)
 
 
 ## Author
