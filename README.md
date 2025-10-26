@@ -13,7 +13,7 @@ It includes:
 
 ---
 
-## 🚀 Features
+## Features
 
 ### 🔍 Data Analysis
 
@@ -24,13 +24,11 @@ It includes:
   * Country of release
   * Ratings and release years
 
-### 🤖 Machine Learning
-
 * **Random Forest Classifier** used to predict Netflix title ratings
 * Other models tested: Logistic Regression, Decision Tree, and XGBoost
 * Tuned using GridSearchCV for best accuracy (~53%)
 
-### 🎯 Recommendation System
+###  Recommendation System
 
 * Built using **TF-IDF Vectorization** + **Cosine Similarity**
 * Provides smart recommendations based on:
@@ -40,7 +38,9 @@ It includes:
   * Country
   * Decade
 
-### 🧠 Tech Stack
+**Posters Included**: Fetch posters via the OMDb API for a visual experience. 
+
+###  Tech Stack
 
 * **Python**
 * **Pandas**, **NumPy**, **Matplotlib**, **Seaborn**
@@ -58,14 +58,26 @@ netflix_project/
 │   ├── random_forest_model.pkl
 │   ├── xgboost_model.pkl
 │   ├── tfidf_vectorizer.pkl
-│
+│   
 ├── data/
 │   └── netflix_data.csv
-│
+├── screenshots 
 ├── requirements.txt          # Dependencies
 └── README.md                 # Project summary
 
 ---
+
+## 📈 Screenshots / Preview
+
+### Home Page
+![Home 1](screenshots/home1.png) ![Home 2](screenshots/home2.png)
+
+### Predict Rating Page
+![Predict](screenshots/predict.png)
+
+### Recommend Shows Page
+![Recommend 1](screenshots/recomm.png) ![Recommend 2](screenshots/recomm2.png)
+
 
 ## ⚙️ Installation
 
@@ -98,13 +110,6 @@ netflix_project/
 
 ---
 
-## 🌐 Future Improvements
-
-* Add hybrid recommender (content + collaborative)
-* Use BERT embeddings for semantic similarity
-* Host on Streamlit Cloud for public access
-
----
 
 ## 🧑‍💻 Author
 
