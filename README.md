@@ -1,46 +1,44 @@
-
-
 # 🎬 Netflix Data Analysis & Recommendation System
 
-This project analyzes and predicts Netflix content trends while also recommending similar shows and movies.
+This project provides analysis and predictions for Netflix content trends while also recommending similar shows and movies.
 
 It includes:
 
 * Data cleaning and visualization
 * Machine learning models for content classification
-* TF-IDF & Cosine Similarity–based recommender system
+* TF-IDF & Cosine Similarity–based recommendation system
 * Streamlit app for interactive use
 
 ---
 
 ## Features
 
-###  Data Analysis
+### Data Analysis
 
-* Cleaned dataset by handling missing values and incorrect entries
+* Cleaned the dataset by handling missing values and incorrect entries
 * Visualized Netflix content distribution by:
 
-  * Type (Movies vs Shows)
+  * Type (Movies vs TV Shows)
   * Country of release
   * Ratings and release years
 
 * **Random Forest Classifier** used to predict Netflix title ratings
-* Other models tested: Logistic Regression, Decision Tree, and XGBoost
-* Tuned using GridSearchCV for best accuracy (~53%)
+* Other models evaluated: Logistic Regression, Decision Tree, and XGBoost
+* Hyperparameters tuned using GridSearchCV to achieve best accuracy (~53%)
 
-###  Recommendation System
+### Recommendation System
 
 * Built using **TF-IDF Vectorization** + **Cosine Similarity**
-* Provides smart recommendations based on:
+* Provides relevant recommendations based on:
 
-  * Title name
+  * Title
   * Genre
   * Country
   * Decade
 
-**Posters Included**: Fetch posters via the OMDb API for a visual experience. 
+* **Posters included:** Fetches posters via the OMDb API for a visual experience
 
-###  Tech Stack
+### Tech Stack
 
 * **Python**
 * **Pandas**, **NumPy**, **Matplotlib**, **Seaborn**
@@ -49,21 +47,22 @@ It includes:
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 netflix_project/
 │
-├── app.py                    # Streamlit app file
+├── app.py # Streamlit app file
 ├── model/
-│   ├── random_forest_model.pkl
-│   ├── xgboost_model.pkl
-│   ├── tfidf_vectorizer.pkl
-│   
+│ ├── random_forest_model.pkl
+│ ├── xgboost_model.pkl
+│ ├── tfidf_vectorizer.pkl
+│
 ├── data/
-│   └── netflix_data.csv
-├── screenshots 
-├── requirements.txt          # Dependencies
-└── README.md                 # Project summary
+│ └── netflix_data.csv
+├── screenshots/
+├── requirements.txt # Dependencies
+└── README.md # Project summary
+└── netflix_project_code.ipynb
 
 ---
 
@@ -78,56 +77,51 @@ netflix_project/
 ### Recommend Shows Page
 ![Recommend 1](screenshots/recomm.png) ![Recommend 2](screenshots/recomm2.png)
 
+---
 
-##  Installation
+## Installation
 
 1. Clone or download this repository
-
 2. Open terminal inside project folder
-
-3. Install all dependencies:
-
-   ```
-   pip install -r requirements.txt
-   ```
-
+3. Install dependencies:
+pip install -r requirements.txt
 4. Run the app:
-
-   ```
-   streamlit run app.py
-   ```
+streamlit run app.py
 
 ---
 
-## 📊 Results
+## Results
 
-* **Best Model:** Random Forest
+* **Best Model:** Random Forest  
+
 **Predictive Model Accuracy:**  
 The Random Forest model achieves approximately **53% accuracy** on the Netflix rating prediction task.  
-> Note: Since Netflix ratings are subjective and multiclass, this performance demonstrates the model captures meaningful patterns from limited features (type, genre, country, duration, and decade). The primary focus of the app is the content-based recommendation system.
+> Since Netflix ratings are subjective and multiclass, this performance demonstrates that the model captures meaningful patterns from limited features (type, genre, country, duration, and decade). The primary focus of the app is the content-based recommendation system.
 
 * **Recommender Example:**
 
-  * Input: *Stranger Things*
-  * Output: `[October Faction, Trese, Curon, 46, Good Witch]`
+* Input: *Stranger Things*
+* Output: `[October Faction, Trese, Curon, 46, Good Witch]`
 
 ---
 
-## 📂 Full Project Code
+## Full Project Code
 
 For those interested in the **model training, feature engineering, and hyperparameter tuning**, the complete notebook is available:
 
 [netflix_project_code.ipynb](netflix_project_code.ipynb)
 
-## 🌐 Live Demo
-Try the app live: [Netflix Analysis & Recommender](https://alpha6849-netflix-recommender-app.streamlit.app)
+---
 
+## Live Demo
+
+Try the app live: [Netflix Analysis & Recommender](https://netflix-recommender-app-hy7tkafxtdvmabqms5fbb7.streamlit.app/)
+
+---
 
 ## Author
 
 **Prathamesh** - 
 Machine Learning & Deep Learning Enthusiast
-
----
 
 
