@@ -95,7 +95,7 @@ streamlit run app.py
 * **Best Model:** Random Forest  
 
 **Predictive Model Accuracy:**  
-The Random Forest model achieves approximately **53% accuracy** on the Netflix rating prediction task.  
+The Random Forest model achieves the best accuracy on the Netflix rating prediction task.( at par with XGBOOST )
 > Since Netflix ratings are subjective and multiclass, this performance demonstrates that the model captures meaningful patterns from limited features (type, genre, country, duration, and decade). The primary focus of the app is the content-based recommendation system.
 
 * **Recommender Example:**
