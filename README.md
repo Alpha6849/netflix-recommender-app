@@ -24,7 +24,7 @@ It includes:
 
 * **Random Forest Classifier** used to predict Netflix title ratings
 * Other models evaluated: Logistic Regression, Decision Tree, and XGBoost
-* Hyperparameters tuned using GridSearchCV to achieve best accuracy (~53%)
+* Hyperparameters tuned using GridSearchCV to achieve best accuracy 
 
 ### Recommendation System
 
